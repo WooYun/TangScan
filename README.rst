@@ -31,4 +31,5 @@ rank与奖励
 ------------------
 
 Mail: root@tangscan.com
+
 Weibo: http://weibo.com/tangscan
