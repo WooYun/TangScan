@@ -160,6 +160,8 @@ type 表示 POC 的类型，使用 ``self.type.xxx`` 进行访问
     - 任意文件上传
   * - file_operation
     - 任意文件操作
+  * - file_traversal
+    - 目录遍历
   * - rce
     - 远程命令/代码执行
   * - lfi
@@ -167,7 +169,7 @@ type 表示 POC 的类型，使用 ``self.type.xxx`` 进行访问
   * - rfi
     - 远程文件包含
   * - info_leak
-    - 信息泄漏(目录遍历, 爆路径等)
+    - 信息泄漏(phpinfo信息, 爆路径等)
   * - misconfiguration
     - 错误配置
   * - other
