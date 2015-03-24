@@ -7,6 +7,7 @@ See the file 'docs/COPYING' for copying permission
 author: fate0 <fate0@wooyun.org>
 """
 
+import json
 import argparse
 
 from exploit import TSLogLevel, TSSeverity, TSType
@@ -58,6 +59,14 @@ def main(ts_instance):
         ts_instance.exploit()
     else:
         ts_instance.verify()
+
+    try:
+        results = [ts_instance.result.to_python()]
+        json.dumps(results)
+    except Exception, e:
+        print('result 无法被 json 序列化, 请不要将不可序列化的对象填写至 result 中')
+        print(e)
+        return
 
     if ts_instance.result.status:
         print('[POC 编写者]')
