@@ -337,7 +337,7 @@ main入口
     line 2: 导入 main 函数
     line 3: 执行 main 函数, 以TangScan的一个实例为参数
 
-到这里, 我们完完整整的实现了一个POC, 带有verify模式和exploit模式的POC, 完整代码在 `github <https://github.com/WooYun/TangScan/blob/master/tangscan/eyou4_list_userinfo_sql_injection_20140422.py>`_ 。
+到这里, 我们完完整整的实现了一个POC, 带有verify模式和exploit模式的POC, 完整代码在 `github <https://github.com/WooYun/TangScan/blob/master/tangscan/eyou4_list_userinfo_sql_injection.py>`_ 。
 
 
 执行POC
@@ -349,7 +349,7 @@ main入口
 
 .. code-block:: sh
 
-    $ ython eyou4_list_userinfo_sql_injection.py -h
+    $ python eyou4_list_userinfo_sql_injection.py -h
     usage: eyou4_list_userinfo_sql_injection.py [-h] [--debug]
                                                 [--mode {verify,exploit}] --url
                                                 URL
